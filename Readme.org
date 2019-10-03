@@ -31,7 +31,7 @@ publish this code to your spreadsheet (see Publish below), you will be able to:
 
 ** Build
 
- See ~package.json~ for build, rebuild, clean, publish scripts.
+ See ~package.json~ for build, clean, publish scripts.
 
 ** Publish
 

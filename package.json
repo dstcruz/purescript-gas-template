@@ -9,7 +9,6 @@
   "scripts": {
     "clean": "rm -fr output && rm -fr dist",
     "build": "spago build && webpack && cp appsscript.json dist/",
-    "rebuild": "clean && build",
     "publish": "clasp push"
   },
   "author": "Daniel Santa Cruz",
