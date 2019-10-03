@@ -52,5 +52,6 @@ publish this code to your spreadsheet (see Publish below), you will be able to:
  As a first step, we build the purescript code with ~spago~. Once that is done,
  we call ~webpack~ to bundle things up with our ~index.js~ file as the entry
  point. Since google doesn't understand plain, modern, javascript, ~webpack~
- transpiles (via ~babel~), and then uses the ~gas-webpack-plugin~ to massage
- the javascript into code that google's app engine likes.
+ transpiles (via ~babel~), and then uses the [[https://github.com/fossamagna/gas-webpack-plugin][gas-webpack-plugin]] to massage
+ the javascript into code that google's app engine likes. ~GAS~ expects that all declarations be top-level,
+ so this plugin detects expressions assigned to ~global~ and generates a top-level declaration for it.
