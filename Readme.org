@@ -2,16 +2,16 @@
 
 A template project to get you jump-started using [[https://developers.google.com/apps-script][Google Apps Script]] with [[https://www.purescript.org][Purescript]].
 
-See =src/App/Sample.purs= for the simplest of interactions. Once you build and
+See ~src/App/Sample.purs~ for the simplest of interactions. Once you build and
 publish this code to your spreadsheet (see Publish below), you will be able to:
 
- - In a cell, put the formula src_shell{=HELLO("world")} to see "Hello wold" returned by your purescript code.
+ - In a cell, put the formula ~=HELLO("world")~ to see "Hello wold" returned by your purescript code.
 
  - See a new menu called "FromPurescript", with 2 entries which make a toast appear with a message.
 
 ** Environment
 
- If you have nix, see the overlay at =purescript.nix= for easy purescript
+ If you have nix, see the overlay at ~purescript.nix~ for easy purescript
  development tools.
 
  Once you have that, it is easy to jump into an environment to work on this
@@ -31,26 +31,26 @@ publish this code to your spreadsheet (see Publish below), you will be able to:
 
 ** Build
 
- See =package.json= for build, rebuild, clean, publish scripts.
+ See ~package.json~ for build, rebuild, clean, publish scripts.
 
 ** Publish
 
  This package uses [[https://developers.google.com/apps-script/guides/clasp][google's clasp]] to upload the script to google servers. You will
- need to first login in order to be able to execute the =clasp push= command run by
- the =publish= script. Login in is as simple as 
+ need to first login in order to be able to execute the ~clasp push~ command run by
+ the ~publish~ script. Login in is as simple as 
 
  #+BEGIN_SRC shell
  npx clasp login
  #+END_SRC
 
  You will also need to create a Spreadsheet, open "Tools > Script Editor", name
- the script, and capture the =scriptId= from the Script Editor's "View > Project properties"
- menu. Insert that value into =.clasp.json=.
+ the script, and capture the ~scriptId~ from the Script Editor's "View > Project properties"
+ menu. Insert that value into ~.clasp.json~.
 
 ** Building notes
 
- As a first step, we build the purescript code with =spago=. Once that is done,
- we call =webpack= to bundle things up with our =index.js= file as the entry
- point. Since google doesn't understand plain, modern, javascript, =webpack=
- transpiles (via =babel=), and then uses the =gas-webpack-plugin= to massage
+ As a first step, we build the purescript code with ~spago~. Once that is done,
+ we call ~webpack~ to bundle things up with our ~index.js~ file as the entry
+ point. Since google doesn't understand plain, modern, javascript, ~webpack~
+ transpiles (via ~babel~), and then uses the ~gas-webpack-plugin~ to massage
  the javascript into code that google's app engine likes.
