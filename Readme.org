@@ -1,6 +1,6 @@
 * Purescript-GAS-Template 
 
-A template project to get you jump-started using [[https://developers.google.com/apps-script][Google Apps Script]] with [[https://www.purescript.org][Purescript]].
+A minimal template to get you jump-started using [[https://developers.google.com/apps-script][Google Apps Script]] with [[https://www.purescript.org][Purescript]].
 
 See ~src/App/Sample.purs~ for the simplest of interactions. Once you build and
 publish this code to your spreadsheet (see Publish below), you will be able to:
