@@ -5,7 +5,7 @@ A template project to get you jump-started using [[https://developers.google.com
 See =src/App/Sample.purs= for the simplest of interactions. Once you build and
 publish this code to your spreadsheet (see Publish below), you will be able to:
 
- - In a cell, put the formula ==HELLO("world")= to see "Hello wold" returned by your purescript code.
+ - In a cell, put the formula src_shell{=HELLO("world")} to see "Hello wold" returned by your purescript code.
 
  - See a new menu called "FromPurescript", with 2 entries which make a toast appear with a message.
 
