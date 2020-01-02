@@ -11,16 +11,8 @@ publish this code to your spreadsheet (see Publish below), you will be able to:
 
 ** Environment
 
- If you have nix, see the overlay at ~purescript.nix~ for easy purescript
- development tools.
-
- Once you have that, it is easy to jump into an environment to work on this
- codebase with:
-
- #+BEGIN_SRC shell
- nix-shell -p purs-0_13_3 spago nodejs-10_x yarn
- #+END_SRC
-
+If you have Nix, you can run the `nix-shell` with the dependencies already in place.
+   
 ** Init
 
  To init, follow standand npm/yarn procedure:
@@ -54,4 +46,4 @@ publish this code to your spreadsheet (see Publish below), you will be able to:
  point. Since google doesn't understand plain, modern, javascript, ~webpack~
  transpiles (via ~babel~), and then uses the [[https://github.com/fossamagna/gas-webpack-plugin][gas-webpack-plugin]] to massage
  the javascript into code that google's app engine likes. ~GAS~ expects that all declarations be top-level,
- so this plugin detects expressions assigned to ~global~ and generates a top-level declaration for it.
+ so this plugin detects expressions assigned to ~global~ and generates a top-level declaration for it. 
