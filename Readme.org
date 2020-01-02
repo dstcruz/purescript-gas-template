@@ -11,7 +11,7 @@ publish this code to your spreadsheet (see Publish below), you will be able to:
 
 ** Environment
 
-If you have Nix, you can run the `nix-shell` with the dependencies already in place.
+If you have Nix, you can run the ~nix-shell~ with the dependencies already in place.
    
 ** Init
 
